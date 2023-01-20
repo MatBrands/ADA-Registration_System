@@ -9,13 +9,13 @@
 
 Este projeto tem como objetivo a conclusão do módulo I do curso Data4All. Ela consiste em um sistema simples de cadastro de pessoas.
 
-Conteúdo:
+## Conteúdo
+
 - Integrantes
 - Tecnologias
 - Instalação
 - Organização do projeto
 - Contribuições
-
 
 ## Integrantes
 Projeto desenvolvido pelos Devs:
