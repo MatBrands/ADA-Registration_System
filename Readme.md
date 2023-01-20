@@ -1,4 +1,6 @@
 # ADA - Registration System
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+
 - Instituição: Let's Code
 - Curso: Data4All
 - Disciplina: Lógica de Programação I
