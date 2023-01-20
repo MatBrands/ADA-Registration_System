@@ -35,10 +35,10 @@ Conteúdo:
 ## Integrantes
 Projeto desenvolvido pelos Devs:
 
-- [Matheus Carvalho de Brito](https://github.com/)
+- [Matheus Carvalho de Brito](https://github.com/mateuscbrito)
 - [Matheus Miranda Brandão](https://github.com/MatBrands)
-- [Roberto Bruno Pontes dos Santos](https://github.com/)
-- [Wendrik de Oliveira Santana](https://github.com/)
+- [Roberto Bruno Pontes dos Santos](https://github.com/robertopnts)
+- [Wendrik de Oliveira Santana](https://github.com/Wendr1k)
 
 ## Instalação
 
