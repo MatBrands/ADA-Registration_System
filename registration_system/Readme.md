@@ -23,7 +23,7 @@ Conteúdo:
 - [ ] Informações de todos os usuários
 - [ ] Sair
 
-## - Funcionalidades e responsável
+## Funcionalidades e responsável
 
 Para melhor controle será dividido o desenvolvimento em fragmentos que serão integrados ao projeto, onde cada dev será responsável por uma parte.
 
