@@ -9,6 +9,8 @@
 
 Este projeto tem como objetivo a conclusão do módulo I do curso Data4All. Ela consiste em um sistema simples de cadastro de pessoas.
 
+A especificação completa do projeto pode ser encontrada em: [Projeto Final](https://github.com/MatBrands/ADA-Registration_System/blob/master/Projeto%20Final.ipynb)
+
 ## Conteúdo
 
 - Integrantes
@@ -45,7 +47,7 @@ conda env create environment.yml
 
 - Ativar
 ```sh
-conda activate genome_search-venv
+conda activate registration_system_-_venv
 ```
 
 - Desativar
@@ -63,12 +65,12 @@ cd utils
 
 - Criar ambiente virtual
 ```sh
-python -m venv genome_search-venv
+python -m venv registration_system_-_venv
 ```
 
 - Ativar
 ```sh
-source ./genome_search-venv/bin/activate
+source ./registration_system_-_venv/bin/activate
 ```
 
 - Instalar dependências
@@ -87,6 +89,7 @@ deactivate
 ├── ADA-Registration_System
 │   ├── LICENSE
 │   ├── Readme.md
+│   ├── Projeto Final.ipynb
 │   ├── registration_system
 │   │   ├── __init__.py
 │   │   ├── interface
