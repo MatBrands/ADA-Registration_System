@@ -89,14 +89,13 @@ deactivate
 ├── ADA-Registration_System
 │   ├── LICENSE
 │   ├── Readme.md
-│   ├── Projeto Final.ipynb
 │   ├── registration_system
 │   │   ├── __init__.py
 │   │   ├── interface
 │   │   │   └── Readme.md
 │   │   └── Readme.md
 │   └── utils
-│       └── Readme.md
+│       └── Projeto Final.ipynb
 ```
 
 
