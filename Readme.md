@@ -47,7 +47,7 @@ conda env create environment.yml
 
 - Ativar
 ```sh
-conda activate registration_system_-_venv
+conda activate registration_system_venv
 ```
 
 - Desativar
@@ -65,12 +65,12 @@ cd utils
 
 - Criar ambiente virtual
 ```sh
-python -m venv registration_system_-_venv
+python -m venv registration_system_venv
 ```
 
 - Ativar
 ```sh
-source ./registration_system_-_venv/bin/activate
+source ./registration_system_venv/bin/activate
 ```
 
 - Instalar dependências
