@@ -5,7 +5,7 @@
 - Curso: Data4All
 - Disciplina: Lógica de Programação I
 - Professores: Henrique Assis Cordeiro & Wenderson Alexandre de Sousa Silva
-- Alunos: Matheus Carvalho de Brito, Matheus Miranda Brandão, Roberto Bruno Pontes dos Santos & Wendrik de Oliveira Santana.
+- Alunos: Mateus Carvalho de Brito, Matheus Miranda Brandão, Roberto Bruno Pontes dos Santos & Wendrik de Oliveira Santana.
 
 Este projeto tem como objetivo a conclusão do módulo I do curso Data4All. Ela consiste em um sistema simples de cadastro de pessoas.
 
@@ -22,7 +22,7 @@ A especificação completa do projeto pode ser encontrada em: [Projeto Final](ht
 ## Integrantes
 Projeto desenvolvido pelos Devs:
 
-- [Matheus Carvalho de Brito](https://github.com/mateuscbrito)
+- [Mateus Carvalho de Brito](https://github.com/mateuscbrito)
 - [Matheus Miranda Brandão](https://github.com/MatBrands)
 - [Roberto Bruno Pontes dos Santos](https://github.com/robertopnts)
 - [Wendrik de Oliveira Santana](https://github.com/Wendr1k)
