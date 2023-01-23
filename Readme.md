@@ -33,7 +33,7 @@ Projeto desenvolvido pelos Devs:
 - Json
 
 ## Execução
-Como a proposta do projeto foi a utilização de tecnologias vistas em aula, não foi necessário o uso de pacotes externos-
+Como a proposta do projeto foi a utilização de técnicas e tecnologias vistas em aula, não foi necessário o uso de pacotes externos
 
 - Navegue até a pasta destino
 ```sh
