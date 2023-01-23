@@ -15,7 +15,7 @@ A especificação completa do projeto pode ser encontrada em: [Projeto Final](ht
 
 - Integrantes
 - Tecnologias
-- Instalação
+- Execução
 - Organização do projeto
 - Contribuições
 
@@ -29,70 +29,35 @@ Projeto desenvolvido pelos Devs:
 
 ## Tecnologias
 
+- Python
+- Json
 
-## Instalação
+## Execução
+Como a proposta do projeto foi a utilização de tecnologias vistas em aula, não foi necessário o uso de pacotes externos-
 
-### Conda
-No desenvolvimento foi utilizado o gerenciador de pacotes e ambientes [Conda](https://conda.io/). Portanto para prosseguir necessita-se de sua [instalação](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
-
-- Navegar até a pasta de destino
+- Navegue até a pasta destino
 ```sh
-cd utils
+cd registration_system
 ```
 
-- Instalar dependências
+- Execute o programa
 ```sh
-conda env create environment.yml
+python __init__.py
 ```
-
-- Ativar
-```sh
-conda activate registration_system_venv
-```
-
-- Desativar
-```sh
-conda deactivate
-```
-
-### Requirements
-Pode-se utilizar o arquivo requiremets.txt para criar o ambiente virtual.
-
-- Navegar até a pasta de destino
-```sh
-cd utils
-```
-
-- Criar ambiente virtual
-```sh
-python -m venv registration_system_venv
-```
-
-- Ativar
-```sh
-source ./registration_system_venv/bin/activate
-```
-
-- Instalar dependências
-```sh
-pip install -r requirements.txt
-```
-
-- Desativar
-```sh
-deactivate
-```
-
 
 ## Organização do projeto
 ```sh
 ├── ADA-Registration_System
-│   ├── LICENSE
+│   ├── License
 │   ├── Readme.md
 │   ├── registration_system
-│   │   ├── __init__.py
-│   │   ├── interface
+│   │   ├── controller
+│   │   │   └── database.json
+│   │   ├── model
 │   │   │   └── Readme.md
+│   │   ├── view
+│   │   │   └── Readme.md
+│   │   ├── __init__.py
 │   │   └── Readme.md
 │   └── utils
 │       └── Projeto Final.ipynb
