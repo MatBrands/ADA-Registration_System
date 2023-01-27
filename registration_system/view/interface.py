@@ -47,7 +47,7 @@ def menu_create(registration: Registration) -> None:
     
     id = str(registration.number_users()+1)
     name = input("Nome completo: ")
-    telephone = input("Telefone com DDD (Apenas os números): ")
+    telephone = input("Telefone com DDD (Apenas os números): ").zfill(11)
     address = input("Endereço completo: ")
     
     telephone = f"+55 ({telephone[:2]}) {telephone[2:7]}-{telephone[7:]}"
@@ -99,7 +99,7 @@ def menu_update(registration: Registration) -> None:
     if option == '1':
         user['name'] = input("Nome completo: ")
     elif option == '2':
-        telephone = input("Telefone com DDD (Apenas os números): ")
+        telephone = input("Telefone com DDD (Apenas os números): ").zfill(11)
         telephone = f"+55 ({telephone[:2]}) {telephone[2:7]}-{telephone[7:]}"
         user['telephone'] = telephone
     elif option == '3':
