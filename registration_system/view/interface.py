@@ -1,7 +1,7 @@
 import os
 from model.Registration import *
 
-def initialize() -> bool:
+def initialize() -> bool | None:
     title = 'Boas vindas ao nosso sistema:'
     menu_options = [
         '1 - Inserir usuário',
@@ -19,21 +19,19 @@ def initialize() -> bool:
         for item in menu_options:
             print(item)
         
-        entrada = input()
-        if entrada == '1':
+        option = input()
+        if option == '1':
             menu_create(registration)
-        elif entrada == '2':
+        elif option == '2':
             menu_delete(registration)
-        elif entrada == '3':
+        elif option == '3':
             menu_update(registration)
-        elif entrada == '4':
+        elif option == '4':
             menu_info(registration)
-        elif entrada == '5':
+        elif option == '5':
             manu_all_info(registration)
-        elif entrada == '6':
+        elif option == '6':
             return False
-    
-    return True
 
 def menu_create(registration: Registration) -> None:
     os.system("clear") 
