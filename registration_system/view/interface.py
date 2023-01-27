@@ -1,5 +1,4 @@
 import os
-
 from model.Registration import *
 
 def initialize() -> bool:
