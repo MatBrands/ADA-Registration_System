@@ -68,15 +68,15 @@ class Registration:
         with open(path, 'r', encoding='utf-8') as file:
             data = json.load(file)
         
-        ative_users = { }
+        active_users = { }
         for key, item in data.items():
             if item['status']:
-                ative_users[key] = item
+                active_users[key] = item
                 
-        if not len(ative_users):
+        if not len(active_users):
             return False
                 
-        return ative_users
+        return active_users
     
     def delete_user(self, id: str) -> bool:
         path = self.path
