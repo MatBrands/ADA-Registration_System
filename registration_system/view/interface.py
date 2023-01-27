@@ -68,6 +68,8 @@ def menu_delete(registration: Registration) -> None:
         input("Exclusão bem-sucedida\n")
     else:
         input("Usuário não encontrado!\n")
+        
+    return
 
 def menu_update(registration: Registration) -> None:
     os.system("clear") 
@@ -135,4 +137,5 @@ def manu_all_info(registration: Registration) -> None:
         print(f"Endereço: {user['address']}", end='\n\n')
         
     input()
+    
     return
