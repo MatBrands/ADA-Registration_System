@@ -128,7 +128,7 @@ def manu_all_info(registration: Registration) -> None:
     all_users = registration.all_info_users()
     
     if not all_users:
-        input("Erro")
+        input("Erro\n")
         return
     
     for id, user in all_users.items():
