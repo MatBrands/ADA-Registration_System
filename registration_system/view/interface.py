@@ -13,7 +13,7 @@ def initialize() -> bool:
     ]
     registration = Registration()
     
-    while (1):
+    while True:
         os.system("clear") 
         print(title)
         for item in menu_options:
