@@ -54,9 +54,9 @@ python __init__.py
 │   │   ├── controller
 │   │   │   └── database.json
 │   │   ├── model
-│   │   │   └── Readme.md
+│   │   │   └── Registration.py
 │   │   ├── view
-│   │   │   └── Readme.md
+│   │   │   └── interface.py
 │   │   ├── __init__.py
 │   │   └── Readme.md
 │   └── utils
