@@ -78,4 +78,32 @@ class Registration:
                 
         return ative_users
     
+    def delete_user(self, id: str) -> bool:
+        path = self.path
+        with open(path, encoding='utf-8') as file:
+            data = json.load(file)
+            
+        if id not in data:
+            return False
+
+        if not data[id]['status']:
+            return False
+        
+        data[id]['status'] = False
+            
+        with open(path, 'w', encoding='utf-8') as file:
+            json.dump(data, file, indent=4, ensure_ascii=False)
+        return True
     
+    def show_user(self, id) -> dict | bool:
+        path = self.path
+        with open(path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+
+        if id in data:
+            if data[id]['status']:
+                return data[id]
+            else:
+                return False
+                
+        return False
