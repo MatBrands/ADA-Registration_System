@@ -29,7 +29,7 @@ def initialize() -> bool | None:
         elif option == '4':
             menu_info(registration)
         elif option == '5':
-            manu_all_info(registration)
+            menu_all_info(registration)
         elif option == '6':
             return False
 
@@ -59,29 +59,33 @@ def menu_create(registration: Registration) -> None:
     return
 
 def menu_delete(registration: Registration) -> None:
-    os.system("clear") 
-    print("Excluir usuário")
+    while True:
+        os.system("clear") 
+        print("Excluir usuário")
 
-    id = input("Insira o ID do usuário: ")
-    
-    if registration.delete_user(id):
-        input("Exclusão bem-sucedida\n")
-    else:
-        input("Usuário não encontrado!\n")
+        id = input("Insira o ID do usuário: ")
         
+        if registration.delete_user(id):
+            input("Exclusão bem-sucedida\n")
+            break
+        else:
+            input("Usuário não encontrado!\n")
+            
     return
 
 def menu_update(registration: Registration) -> None:
-    os.system("clear") 
-    print("Atualizar dados do usuário")
+    while True:
+        os.system("clear") 
+        print("Atualizar dados do usuário")
 
-    id = input("Insira o ID do usuário: ")
-    
-    user = registration.info_user(id)
-    if not user:
-        input("Usuário não encontrado!\n")
-        return
-    
+        id = input("Insira o ID do usuário: ")
+        
+        user = registration.info_user(id)
+        if not user:
+            input("Usuário não encontrado!\n")
+        else:
+            break
+        
     user['id'] = id
     option = input("Qual informação deseja alterar ?\n1 - Nome\n2 - Telefone\n3 - Endereço\n")
     if option == '1':
@@ -104,15 +108,17 @@ def menu_update(registration: Registration) -> None:
     return
 
 def menu_info(registration: Registration) -> None:
-    os.system("clear") 
-    print("Exibir informações do usuário")
+    while True:
+        os.system("clear") 
+        print("Exibir informações do usuário")
 
-    id = input("Insira o ID do usuário: ")
-    
-    user = registration.info_user(id)
-    if not user:
-        input("Usuário não encontrado!\n")
-        return
+        id = input("Insira o ID do usuário: ")
+        
+        user = registration.info_user(id)
+        if not user:
+            input("Usuário não encontrado!\n")
+        else:
+            break
     
     print(f"Nome: {user['name']}")
     print(f"Telefone: {user['telephone']}")
@@ -120,7 +126,7 @@ def menu_info(registration: Registration) -> None:
     
     return
 
-def manu_all_info(registration: Registration) -> None:
+def menu_all_info(registration: Registration) -> None:
     os.system("clear") 
     print("Exibir informações de todos os usuários")
     

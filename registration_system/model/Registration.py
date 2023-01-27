@@ -7,14 +7,14 @@ class Registration:
         if not os.path.exists(self.path):
             with open(path, 'w', encoding='utf-8') as file:
                 json.dump({}, file, indent=4, ensure_ascii=False)
-        
+    
     def number_users(self) -> int:
         path = self.path
         with open(path, 'r', encoding='utf-8') as file:
             data = json.load(file)
 
         return len(data)
-        
+    
     def create_user(self, **user_data: dict) -> bool:
         path = self.path
         

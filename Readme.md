@@ -9,7 +9,7 @@
 
 Este projeto tem como objetivo a conclusão do módulo I do curso Data4All. Ela consiste em um sistema simples de cadastro de pessoas.
 
-A especificação completa do projeto pode ser encontrada em: [Projeto Final](https://github.com/MatBrands/ADA-Registration_System/blob/matheus_mbr/utils/Projeto%20Final.md)
+A especificação completa do projeto pode ser encontrada em: [Projeto Final](https://github.com/MatBrands/ADA-Registration_System/blob/master/utils/Projeto%20Final.md)
 
 ## Conteúdo
 
