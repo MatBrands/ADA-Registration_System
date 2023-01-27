@@ -1,5 +1,13 @@
-from model.clear import *
+import os
+import platform
 from model.Registration import *
+
+def clear() -> None:
+    so = platform.system()
+    if so == 'Windows':
+        os.system('cls')
+    else:
+        os.system('clear')
 
 def initialize() -> bool | None:
     title = 'Boas vindas ao nosso sistema:'
