@@ -31,6 +31,9 @@ Projeto desenvolvido pelos Devs:
 
 - Python
 - Json
+- Os
+- Sys
+- Platform
 
 ## Execução
 Como a proposta do projeto foi a utilização de técnicas e tecnologias vistas em aula, não foi necessário o uso de pacotes externos

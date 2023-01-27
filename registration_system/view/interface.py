@@ -1,4 +1,4 @@
-import os
+from model.clear import *
 from model.Registration import *
 
 def initialize() -> bool | None:
@@ -14,7 +14,7 @@ def initialize() -> bool | None:
     registration = Registration()
     
     while True:
-        os.system("clear") 
+        clear() 
         print(title)
         for item in menu_options:
             print(item)
@@ -34,7 +34,7 @@ def initialize() -> bool | None:
             return False
 
 def menu_create(registration: Registration) -> None:
-    os.system("clear") 
+    clear() 
     print("Cadastrar usuário")
     
     id = str(registration.number_users()+1)
@@ -60,7 +60,7 @@ def menu_create(registration: Registration) -> None:
 
 def menu_delete(registration: Registration) -> None:
     while True:
-        os.system("clear") 
+        clear() 
         print("Excluir usuário")
 
         id = input("Insira o ID do usuário: ")
@@ -75,7 +75,7 @@ def menu_delete(registration: Registration) -> None:
 
 def menu_update(registration: Registration) -> None:
     while True:
-        os.system("clear") 
+        clear() 
         print("Atualizar dados do usuário")
 
         id = input("Insira o ID do usuário: ")
@@ -109,7 +109,7 @@ def menu_update(registration: Registration) -> None:
 
 def menu_info(registration: Registration) -> None:
     while True:
-        os.system("clear") 
+        clear() 
         print("Exibir informações do usuário")
 
         id = input("Insira o ID do usuário: ")
@@ -127,7 +127,7 @@ def menu_info(registration: Registration) -> None:
     return
 
 def menu_all_info(registration: Registration) -> None:
-    os.system("clear") 
+    clear() 
     print("Exibir informações de todos os usuários")
     
     all_users = registration.all_info_users()
