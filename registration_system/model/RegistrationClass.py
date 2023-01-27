@@ -5,9 +5,8 @@ class Registration:
     def __init__(self, path: str = './controller/database.json') -> None:
         self.path = path
         if not os.path.exists(self.path):
-            data = {}
             with open(path, 'w', encoding='utf-8') as file:
-                json.dump(data, file, indent=4, ensure_ascii=False)
+                json.dump({}, file, indent=4, ensure_ascii=False)
         
     def number_users(self) -> int:
         path = self.path
