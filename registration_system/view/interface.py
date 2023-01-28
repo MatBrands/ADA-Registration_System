@@ -71,7 +71,10 @@ def menu_delete(registration: Registration) -> None:
         clear() 
         print("Excluir usuário")
 
-        id = input("Insira o ID do usuário: ")
+        id = input("Insira o ID do usuário (-1 para Sair): ")
+        
+        if id == '-1':
+            break
         
         if registration.delete_user(id):
             input("Exclusão bem-sucedida\n")
@@ -85,8 +88,11 @@ def menu_update(registration: Registration) -> None:
     while True:
         clear() 
         print("Atualizar dados do usuário")
-
-        id = input("Insira o ID do usuário: ")
+        
+        id = input("Insira o ID do usuário (-1 para Sair): ")
+        
+        if id == '-1':
+            break
         
         user = registration.info_user(id)
         if not user:
@@ -120,7 +126,10 @@ def menu_info(registration: Registration) -> None:
         clear() 
         print("Exibir informações do usuário")
 
-        id = input("Insira o ID do usuário: ")
+        id = input("Insira o ID do usuário (-1 para Sair): ")
+        
+        if id == '-1':
+            break
         
         user = registration.info_user(id)
         if not user:
