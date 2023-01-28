@@ -129,7 +129,7 @@ def menu_info(registration: Registration) -> None:
         id = input("Insira o ID do usuário (-1 para Sair): ")
         
         if id == '-1':
-            break
+            return
         
         user = registration.info_user(id)
         if not user:
